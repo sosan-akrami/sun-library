@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Download and Comment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">Home <i class="fas fa-home"></i></a>
+        <a href="#book-list">Books <i class="fas fa-book-reader"></i></a>
+        <a href="#comment-section">Comments <i class="fas fa-comments"></i></a>
+        <div class="corner-icons">
+            <i class="fas fa-book-reader icon-right"></i>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        <h1 class="animated-title">Sun Library</h1>
+        <h2>Find Your Favorite Books Here!</h2>
+        
+        <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="filterBooks()">
+        
+        <div class="book-list" id="book-list">
+        
+        </div>
+
+        <div class="comment-section" id="comment-section">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <label for="book">Select Book:</label>
+                <select id="book" required>
+                
+                </select>
+                
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" rows="4" required></textarea>
+                
+                <button type="submit">Submit Comment</button>
+            </form>
+
+            <div class="comments">
+                <h2>Comments</h2>
+                <ul id="comment-list">
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
